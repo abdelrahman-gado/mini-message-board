@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Mini Messageboard
+  </title>
+  <link rel='stylesheet' href='/stylesheets/form-style.css' />
+</head>
+
+<body>
+
+  <header class="app-header">
+    <h1>
+      Mini Messageboard
+    </h1>
+    <p>Welcome to Mini Messageboard
+    </p>
+  </header>
+
+  <main>
+    <form action="/new" method="POST">
+      <div class="username-div">
+        <label for="username-inp">User Name:</label>
+        <input type="text" id="username-inp" name="username" placeholder="Type your user name"> 
+      </div>
+      <div class="message-div">
+        <label for="message-area">Message:</label>
+        <textarea id="message-area" name="message-text" placeholder="Type your message"></textarea>
+      </div>
+      <button class="button" type="submit">Post Message</button>
+    </form>
+  </main>
+
+</body>
+
+</html>
